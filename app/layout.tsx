@@ -16,7 +16,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <style>{`
+          .dm-serif.display-regular {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+
+          .dm-serif.display-regular-italic {
+            font-family: "DM Serif Display", serif;
+            font-weight: 400;
+            font-style: italic;
+          }
+        `}</style>
+      </head>
+      <body className={`${inter.className} dm-serif display-regular`}>
+        {children}
+      </body>
     </html>
   );
 }
