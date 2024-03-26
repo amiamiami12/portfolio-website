@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { DM_Serif_Display } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const DmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,24 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <style>{`
-          .dm-serif.display-regular {
-            font-family: "DM Serif Display", serif;
-            font-weight: 400;
-            font-style: normal;
-          }
-
-          .dm-serif.display-regular-italic {
-            font-family: "DM Serif Display", serif;
-            font-weight: 400;
-            font-style: italic;
-          }
-        `}</style>
-      </head>
-      <body className={`${inter.className} dm-serif display-regular`}>
-        {children}
-      </body>
+      <head></head>
+      <body className={DmSerif.className}>{children}</body>
     </html>
   );
 }

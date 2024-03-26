@@ -16,8 +16,8 @@ import Link from "next/link";
 
 const ProjectHomepage = () => {
   const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
+  const [current, setCurrent] = React.useState<number>(0);
+  const [count, setCount] = React.useState<number>(0);
 
   React.useEffect(() => {
     if (!api) {
