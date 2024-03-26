@@ -1,9 +1,10 @@
 "use client";
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import amilogo from "../../public/assets/homepage/amilogoWHITE.png";
-import aminame from "../../public/assets/homepage/aminame1.png";
+import { Box } from "lucide-react";
+import BlueEden from "../../public/assets/homepage/blueeden.png";
 import {
   Drawer,
   DrawerClose,
@@ -20,13 +21,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import EMailQr from "../../public/assets/homepage/emailqr.png";
 
-const LogoNav = () => {
+const ProjectFirst = () => {
   return (
-    <div className="bg-homebg bg-cover">
-      <div className="w-full h-dvh flex justify-center mx-auto">
-        <div className="flex h-full w-full justify-center backdrop-brightness-50">
-          <div className="text-[29.67px] py-5 text-white">
-            <div className=" px-10 space-x-20 flex items-center justify-center bg-transparent border-[4px] text-[29.67px]">
+    <div className=" bg-secondary">
+      <div className=" w-[70%] h-[150vh] flex justify-center py-5 mx-auto ">
+        <div>
+          <div className="pb-5">
+            <div className=" px-10 space-x-20 flex items-center justify-center bg-transparent border-[4px] text-[29.67px] text-white">
               <div>
                 <Link href="/">
                   <button className="px-4 bg-transparent">Home</button>
@@ -130,21 +131,38 @@ const LogoNav = () => {
                     </div>
                     <DrawerFooter>
                       <DrawerClose>
-                        <Button>Cancel</Button>
+                        <Button variant="outline">Cancel</Button>
                       </DrawerClose>
                     </DrawerFooter>
                   </div>
                 </DrawerContent>
               </Drawer>
             </div>
-
-            <div className=" flex justify-center items-center">
-              <Image
-                src={aminame}
-                width={600}
-                height={600}
-                alt="name of author on screen"
-              />
+          </div>
+          <div className="flex font-semibold justify-center">
+            <div className="">
+              <div className=" text-[70px] ">PROJECTS</div>
+            </div>
+          </div>
+          <br />
+          <hr className=" mx-auto h-[2px] my-8 bg-black opacity-50 border-0" />
+          <br />
+          <div className="flex flex-row justify-center">
+            <div className=" hover:shadow-lg">
+              <Link href="/BlueEden">
+                <Image src={BlueEden} alt="blueeden" />
+              </Link>
+            </div>
+            <div className=" hover:shadow-lg">
+              <Image src={BlueEden} alt="blueeden" />
+            </div>
+          </div>
+          <div className="flex flex-row justify-center">
+            <div className="hover:shadow-lg">
+              <Image src={BlueEden} alt="blueeden" />
+            </div>
+            <div className=" hover:shadow-lg">
+              <Image src={BlueEden} alt="blueeden" />
             </div>
           </div>
         </div>
@@ -152,5 +170,4 @@ const LogoNav = () => {
     </div>
   );
 };
-
-export default LogoNav;
+export default ProjectFirst;

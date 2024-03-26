@@ -101,7 +101,7 @@
     @apply gap-2 flex items-center justify-center bg-[#AB9F94];
   }
   button:hover {
-    @apply bg-[#968270];
+    @apply gap-2 flex items-center justify-center bg-[#968270];
   }
 }
 

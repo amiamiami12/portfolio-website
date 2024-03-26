@@ -12,6 +12,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import blueEden from "../../public/assets/homepage/blueeden.png";
+import Link from "next/link";
 
 const ProjectHomepage = () => {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -51,7 +52,7 @@ const ProjectHomepage = () => {
                 ORDERS ONLINE AND BOOKING.
               </div>
               <button className=" text-[18.34px] mt-10 mx-64 pt-3 pb-3 bg-customColor">
-                More Details
+                <Link href="/projects">More Details</Link>
               </button>
             </div>
             <div className=" flex flex-col pr-14">

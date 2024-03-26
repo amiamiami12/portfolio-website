@@ -1,11 +1,12 @@
 import React from "react";
-import ProjectFirst from "../projectcomponents/ProjectFirst";
+import BlueEdenFirst from "../blueedencomps/BlueEdenFirst";
 import Footer from "../components/Footer";
 import Desk from "../components/Desk";
+
 const page = () => {
   return (
     <div>
-      <ProjectFirst />
+      <BlueEdenFirst />
       <Footer />
       <Desk />
     </div>

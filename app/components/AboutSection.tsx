@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import AboutImage from "../../public/assets/homepage/aboutme1.jpg";
+import Link from "next/link";
 
 const AboutSection = () => {
   return (
@@ -19,7 +20,7 @@ const AboutSection = () => {
                 DEVELOPER BASED IN BANDAR SERI BEGAWAN, BRUNEI DARUSSALAM.
               </div>
               <button className=" text-[18.34px] mt-10 mr-96 pt-3 pb-3 bg-customColor">
-                More Details
+                <Link href="/about">More Details</Link>
               </button>
             </div>
             <div className=" flex flex-col">
