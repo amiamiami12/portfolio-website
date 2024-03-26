@@ -15,26 +15,24 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
-import { Label } from "@radix-ui/react-label";
-import { Textarea } from "@/components/ui/textarea";
-import { Input } from "@/components/ui/input";
 import EMailQr from "../../public/assets/homepage/emailqr.png";
+import { DrawerDemo } from "./Drawer";
 
 const LogoNav = () => {
   return (
     <div className="bg-homebg bg-cover">
-      <div className="w-full h-dvh flex justify-center mx-auto">
+      <div className="mx-auto flex h-dvh w-full justify-center">
         <div className="flex h-full w-full justify-center backdrop-brightness-50">
-          <div className="text-[29.67px] py-5 text-white">
-            <div className=" px-10 space-x-20 flex items-center justify-center bg-transparent border-[4px] text-[29.67px]">
+          <div className="py-5 text-[29.67px] text-white">
+            <div className=" flex items-center justify-center space-x-20 border-[4px] bg-transparent px-10 text-[29.67px]">
               <div>
                 <Link href="/">
-                  <button className="px-4 bg-transparent">Home</button>
+                  <button className="bg-transparent px-4">Home</button>
                 </Link>
               </div>
               <div>
                 <Link href="/about">
-                  <button className="px-4 bg-transparent">About</button>
+                  <button className="bg-transparent px-4">About</button>
                 </Link>
               </div>
 
@@ -46,13 +44,15 @@ const LogoNav = () => {
               />
               <div>
                 <Link href="/projects">
-                  <button className="px-4 bg-transparent">Projects</button>
+                  <button className="bg-transparent px-4">Projects</button>
                 </Link>
               </div>
 
-              <Drawer>
+              <DrawerDemo />
+
+              {/* <Drawer>
                 <DrawerTrigger>
-                  <Button className="px-4 bg-transparent text-[29.67px]">
+                  <Button className="bg-transparent px-4 text-[29.67px]">
                     Contact
                   </Button>
                 </DrawerTrigger>
@@ -68,14 +68,14 @@ const LogoNav = () => {
                       <div className="flex items-center justify-center space-x-2"></div>
 
                       <div className=" bg-customBrown text-white">
-                        <div className=" w-[70%] h-dvh flex justify-center items-center mx-auto ">
+                        <div className=" mx-auto flex h-dvh w-[70%] items-center justify-center ">
                           <div>
                             <div className="flex flex-row font-semibold">
                               <div className=" flex flex-col">
-                                <div className=" text-[48px] py-5 ">
+                                <div className=" py-5 text-[48px] ">
                                   HIT ME UP! LET’S TALK
                                 </div>
-                                <div className=" text-[18.34px] py-5">
+                                <div className=" py-5 text-[18.34px]">
                                   Feel free to leave a message via the form, or
                                   you can get a hold of me at{" "}
                                   <a
@@ -94,41 +94,36 @@ const LogoNav = () => {
                                   />
                                 </div>
                               </div>
-                              <form>
-                                <div className=" flex flex-col w-[100%] pl-64 pt-5">
-                                  <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
-                                    <Label htmlFor="name">Name</Label>
-                                    <Input
-                                      type="text"
-                                      id="text"
-                                      name="name"
-                                      placeholder="Name"
-                                    />
-                                  </div>
-                                  <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
-                                    <Label htmlFor="email">Email</Label>
-                                    <Input
-                                      type="email"
-                                      id="email"
-                                      placeholder="Email"
-                                    />
-                                  </div>
-                                  <div className="grid w-full gap-1.5 py-5">
-                                    <Label htmlFor="message">
-                                      Your message
-                                    </Label>
-                                    <Textarea
-                                      placeholder="Type your message here."
-                                      id="message"
-                                    />
-                                  </div>
-                                  <div className="py-5">
-                                    <Button className=" bg-customColor">
-                                      Submit
-                                    </Button>
-                                  </div>
+                              <div className=" flex w-[100%] flex-col pl-64 pt-5">
+                                <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
+                                  <Label htmlFor="name">Name</Label>
+                                  <Input
+                                    type="text"
+                                    id="text"
+                                    placeholder="Name"
+                                  />
                                 </div>
-                              </form>
+                                <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
+                                  <Label htmlFor="email">Email</Label>
+                                  <Input
+                                    type="email"
+                                    id="email"
+                                    placeholder="Email"
+                                  />
+                                </div>
+                                <div className="grid w-full gap-1.5 py-5">
+                                  <Label htmlFor="message">Your message</Label>
+                                  <Textarea
+                                    placeholder="Type your message here."
+                                    id="message"
+                                  />
+                                </div>
+                                <div className="py-5">
+                                  <Button className=" bg-customColor">
+                                    Submit
+                                  </Button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -141,10 +136,10 @@ const LogoNav = () => {
                     </DrawerFooter>
                   </div>
                 </DrawerContent>
-              </Drawer>
+              </Drawer> */}
             </div>
 
-            <div className=" flex justify-center items-center">
+            <div className=" flex items-center justify-center">
               <Image
                 src={aminame}
                 width={600}

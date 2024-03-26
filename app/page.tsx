@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div>
       <LogoNav />
-      <AboutSection />
-      <PersonalLife />
-      <ProjectHomepage />
-      <ContactSection />
-      <Footer />
-      <Desk />
+      {/* <AboutSection /> */}
+      {/* <PersonalLife /> */}
+      {/* <ProjectHomepage /> */}
+      {/* <ContactSection /> */}
+      {/* <Footer /> */}
+      {/* <Desk /> */}
     </div>
   );
 }
