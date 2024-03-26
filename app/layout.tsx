@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Serif_Display } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const DmSerif = DM_Serif_Display({ subsets: ["latin"], weight: "400" });
 
@@ -16,7 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={DmSerif.className}>{children}</body>
+      <body className={DmSerif.className}><main>{children}</main>
+        <Toaster /></body>
     </html>
   );
 }
