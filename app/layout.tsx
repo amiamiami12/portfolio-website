@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import { DM_Serif_Display } from "next/font/google";
 
@@ -17,7 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head></head>
       <body className={DmSerif.className}>{children}</body>
     </html>
   );
