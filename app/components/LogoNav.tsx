@@ -66,6 +66,7 @@ const LogoNav = () => {
                     </DrawerHeader>
                     <div className="p-4 pb-0">
                       <div className="flex items-center justify-center space-x-2"></div>
+
                       <div className=" bg-customBrown text-white">
                         <div className=" w-[70%] h-dvh flex justify-center items-center mx-auto ">
                           <div>
@@ -93,36 +94,41 @@ const LogoNav = () => {
                                   />
                                 </div>
                               </div>
-                              <div className=" flex flex-col w-[100%] pl-64 pt-5">
-                                <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
-                                  <Label htmlFor="name">Name</Label>
-                                  <Input
-                                    type="text"
-                                    id="text"
-                                    placeholder="Name"
-                                  />
+                              <form>
+                                <div className=" flex flex-col w-[100%] pl-64 pt-5">
+                                  <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
+                                    <Label htmlFor="name">Name</Label>
+                                    <Input
+                                      type="text"
+                                      id="text"
+                                      name="name"
+                                      placeholder="Name"
+                                    />
+                                  </div>
+                                  <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
+                                    <Label htmlFor="email">Email</Label>
+                                    <Input
+                                      type="email"
+                                      id="email"
+                                      placeholder="Email"
+                                    />
+                                  </div>
+                                  <div className="grid w-full gap-1.5 py-5">
+                                    <Label htmlFor="message">
+                                      Your message
+                                    </Label>
+                                    <Textarea
+                                      placeholder="Type your message here."
+                                      id="message"
+                                    />
+                                  </div>
+                                  <div className="py-5">
+                                    <Button className=" bg-customColor">
+                                      Submit
+                                    </Button>
+                                  </div>
                                 </div>
-                                <div className="grid w-full max-w-sm items-center gap-1.5 py-5">
-                                  <Label htmlFor="email">Email</Label>
-                                  <Input
-                                    type="email"
-                                    id="email"
-                                    placeholder="Email"
-                                  />
-                                </div>
-                                <div className="grid w-full gap-1.5 py-5">
-                                  <Label htmlFor="message">Your message</Label>
-                                  <Textarea
-                                    placeholder="Type your message here."
-                                    id="message"
-                                  />
-                                </div>
-                                <div className="py-5">
-                                  <Button className=" bg-customColor">
-                                    Submit
-                                  </Button>
-                                </div>
-                              </div>
+                              </form>
                             </div>
                           </div>
                         </div>

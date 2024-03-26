@@ -6,9 +6,6 @@ import PersonalLife from "./components/PersonalLife";
 import ProjectHomepage from "./components/ProjectHomepage";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import Image from "next/image";
-import amilogo from "../public/assets/homepage/amilogoWHITE.png";
-import aminame from "../public/assets/homepage/aminame1.png";
 
 export default function Home() {
   return (
