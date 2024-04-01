@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import amilogo from "../../public/assets/homepage/amilogoWHITE.png";
 import BlueEden from "../../public/assets/homepage/blueeden.png";
-
+import Cup from "../../public/assets/homepage/cup.png";
 import { DrawerDemo } from "../components/Drawer";
 
 const ProjectFirst = () => {
   return (
     <div className=" bg-secondary">
-      <div className=" w-[70%] h-[150vh] flex justify-center py-5 mx-auto ">
+      <div className=" w-[70%] h-dvh flex justify-center py-5 mx-auto ">
         <div>
           <div className="pb-5">
             <div className=" px-10 space-x-20 flex items-center justify-center bg-transparent border-[4px] text-[29.67px] text-white">
@@ -55,15 +55,8 @@ const ProjectFirst = () => {
               </Link>
             </div>
             <div className=" hover:shadow-lg">
-              <Image src={BlueEden} alt="blueeden" />
-            </div>
-          </div>
-          <div className="flex flex-row justify-center">
-            <div className="hover:shadow-lg">
-              <Image src={BlueEden} alt="blueeden" />
-            </div>
-            <div className=" hover:shadow-lg">
-              <Image src={BlueEden} alt="blueeden" />
+              <Link href="/rejuvenature"><Image src={Cup} alt="cup" /></Link>
+              
             </div>
           </div>
         </div>

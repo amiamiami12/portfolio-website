@@ -2,15 +2,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import amilogo from "../../public/assets/homepage/amilogoWHITE.png";
-import MoodBoard from "../../public/assets/blueeden/moodboard.png";
-import FirstBlue from "../../public/assets/blueeden/firstblue.png";
-import SecondBlue from "../../public/assets/blueeden/secondblue.png";
-import ThirdBlue from "../../public/assets/blueeden/thirdblue.png";
-import FourthBlue from "../../public/assets/blueeden/fourthblue.png";
 import { DrawerDemo } from "../components/Drawer";
+import amilogo from "../../public/assets/homepage/amilogoWHITE.png";
+import RejuvLogo from "../../public/assets/homepage/cup.png";
+import FiftyCups from "../../public/assets/homepage/rowscups.png";
 
-const BlueEdenFirst = () => {
+const RejuvFirst = () => {
   return (
     <div className=" bg-secondary">
       <div className=" mx-auto flex min-h-screen w-[70%] justify-center py-5 ">
@@ -47,22 +44,24 @@ const BlueEdenFirst = () => {
           <div className="flex flex-row py-12 font-semibold">
             <div className=" flex basis-1/2 flex-col justify-center">
               <h1 className="">
-                BLUE EDEN
+                Rejuvenature
                 <br />
-                CAFE APP
+                Cup
               </h1>
 
-              <div className="flex basis-1/2 flex-row">
+              <div className="flex basis-1/2 flex-row space-x-5">
                 <div className="">
                   <h3>Project Type</h3>
                   <br />
-                  <p>Application Mockup and Wireframe</p>
+                  <p>Ideation and Showcase</p>
                 </div>
                 <br />
                 <div className="">
                   <h3>Tools Used</h3>
                   <br />
-                  <p>Figma & Gaomon 1060 Pro</p>
+                  <p>
+                    Clip Studio Paint <br />& Gaomon 1060 Pro
+                  </p>
                 </div>
               </div>
 
@@ -82,46 +81,42 @@ const BlueEdenFirst = () => {
             </div>
 
             <div className=" flex basis-1/2 flex-col text-[24px] font-normal">
-              The Blue Eden Café app mockup is a sleek and user-friendly <br />
-              digital platform designed to enhance the customer
+              The Rejuvenature Cup is an innovative idea that strives <br />
+              to counter the problems faced with littering and waste
               <br />
-              experience. With a serene blue color scheme, intuitive
+              pollution by instead of avoiding the problem completely,
               <br />
-              navigation, and seamless features, it encapsulates the
+              the cup is designed to be decomposable when thrown away,
               <br />
-              essence of the café&aposs tranquil ambiance and exceptional
+              with seeds and needed nutrients hidden within the cup to
               <br />
-              service.
+              promote the growth of plants.
               <br />
               <br />
-              The home screen offers quick access to menu, reservations,
+              The projects involves creating a video for the product as
               <br />
-              loyalty program, and location information, while a carousel
+              well as promoting it to appeal target audiences such as
               <br />
-              showcases the café&aposs enticing offerings. Customers can
+              cafes, restaurants and even personal use. The cups are
               <br />
-              easily browse the menu, make reservations, track loyalty
+              priced affordably at $5.50 per 50 cups and it also comes
               <br />
-              points, and find nearby locations. Overall, the Blue Eden
+              in different sizes as well as fully customizable to fit
               <br />
-              Café app mockup simplifies the dining experience,
-              <br />
-              fostering engagement and delight among patrons.
+              the businesses&apos needs.
             </div>
           </div>
           <br />
           <hr className=" mx-auto my-8 h-[2px] border-0 bg-black opacity-50" />
           <br />
           <div className=" flex flex-col items-center justify-center space-y-10">
-            <Image src={MoodBoard} alt="moodboard" />
-            <Image src={FirstBlue} alt="first panel" />
-            <Image src={SecondBlue} alt="second panel" />
-            <Image src={ThirdBlue} alt="third panel" />
-            <Image src={FourthBlue} alt="fourth panel" />
+            <Image src={RejuvLogo} alt="rejuv cup" />
+            <Image src={FiftyCups} alt="fifty cups" />
           </div>
         </div>
       </div>
     </div>
   );
 };
-export default BlueEdenFirst;
+
+export default RejuvFirst;

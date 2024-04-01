@@ -5,6 +5,8 @@ import Image from "next/image";
 import amilogo from "../../public/assets/homepage/amilogoWHITE.png";
 import aminame from "../../public/assets/homepage/aminame1.png";
 import { DrawerDemo } from "./Drawer";
+import { FaIcons } from "react-icons/fa";
+import { FaBurger } from "react-icons/fa6";
 
 const LogoNav = () => {
   return (
@@ -12,7 +14,7 @@ const LogoNav = () => {
       <div className="mx-auto flex h-dvh w-full justify-center">
         <div className="flex h-full w-full justify-center backdrop-brightness-50">
           <div className="py-5 text-[29.67px] text-white">
-            <div className=" flex items-center justify-center space-x-20 border-[4px] bg-transparent px-10 text-[29.67px]">
+            <div className=" nav-links flex items-center justify-center space-x-20 border-[4px] bg-transparent px-10 text-[29.67px]">
               <div>
                 <Link href="/">
                   <button className="bg-transparent px-4">Home</button>
